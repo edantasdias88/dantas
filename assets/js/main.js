@@ -111,24 +111,47 @@ if (dragCursor) {
 // ========================================
 // 🔥 PROCESS (ACCORDION CARDS)
 // ========================================
-
 const processCards = document.querySelectorAll('.process-card')
 
-if (processCards.length) {
+const mediaQuery = window.matchMedia("(max-width: 768px)")
+
+if (processCards.length && mediaQuery.matches) {
 
   processCards.forEach(card => {
+    const desc = card.querySelector('.process-card__description')
+
     card.addEventListener('click', () => {
 
-      // se já estiver ativo, não faz nada
       if (card.classList.contains('active')) return
 
-      // remove active de todos
-      processCards.forEach(c => c.classList.remove('active'))
+      // fecha todos
+      processCards.forEach(c => {
+        c.classList.remove('active')
+
+        const d = c.querySelector('.process-card__description')
+        d.style.height = '0px'
+      })
 
       // ativa o clicado
       card.classList.add('active')
 
+      // 🔥 calcula altura real com animação
+      desc.style.height = 'auto'
+      const height = desc.scrollHeight
+      desc.style.height = '0px'
+
+      requestAnimationFrame(() => {
+        desc.style.height = height + 'px'
+      })
     })
   })
+
+  // 🔥 corrige o primeiro card ao carregar
+  const activeCard = document.querySelector('.process-card.active')
+
+  if (activeCard) {
+    const desc = activeCard.querySelector('.process-card__description')
+    desc.style.height = desc.scrollHeight + 'px'
+  }
 
 }

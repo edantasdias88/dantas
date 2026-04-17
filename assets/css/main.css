@@ -215,7 +215,7 @@
 .heading-lg {
   font-family: var(--font-family-base);
   font-size: var(--font-size-heading-lg);
-  line-height: var(--line-height-normal);
+  line-height: var(--line-height-tight);
   letter-spacing: var(--letter-spacing-tight);
 }
 
@@ -263,7 +263,7 @@
   font-weight: var(--font-weight-bold);
 }
 
-@media (max-width: 48rem) {
+@media (max-width: 1000px) {
   :root {
     /* headings */
     --font-size-heading-sm: var(--size-18); /* 18px */
@@ -1107,7 +1107,7 @@ html {
   background: #e9e9e9;
 }
 
-@media (max-width: 48rem) {
+@media (max-width: 1023px) {
   .hero {
     position: relative;
     height: auto;
@@ -1156,10 +1156,15 @@ html {
     align-items: center;
     gap: var(--space-xs);
   }
+  .hero__testimonials-content p {
+    order: 1;
+  }
   .hero__testimonials-avatars {
+    order: 2;
     justify-content: center;
   }
   .hero__testimonials-author {
+    order: 3;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1173,6 +1178,23 @@ html {
   .about_grid {
     grid-template-columns: 1fr;
     gap: var(--space-3xl);
+  }
+  .solutions_scroll {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: none;
+  }
+  .solutions_track {
+    display: flex;
+    gap: var(--space-md);
+    width: -moz-max-content;
+    width: max-content;
+    padding-left: var(--space-md);
+    padding-right: var(--space-md);
+  }
+  .solutions_card {
+    width: 276px;
+    flex-shrink: 0;
   }
   .services_card {
     position: relative;
@@ -1191,6 +1213,8 @@ html {
   .process .process-card {
     flex: none;
     height: auto;
+    min-height: auto;
+    overflow: visible;
   }
   .process .process-card__content {
     margin-top: var(--layout-xs);
@@ -1207,7 +1231,14 @@ html {
   }
   .process .process-card.active .process-card__description {
     opacity: 1;
-    max-height: 200px;
+    max-height: none;
     transform: translateY(0);
+  }
+  .process_right {
+    height: auto;
+    justify-content: flex-start;
+  }
+  .work__grid {
+    gap: var(--layout-xs);
   }
 }/*# sourceMappingURL=main.css.map */

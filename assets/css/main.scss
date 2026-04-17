@@ -903,12 +903,14 @@ html {
 
 
 
-@media (max-width: 48rem) {
+
+@media (max-width: 1023px) {
   .hero {
     position: relative;
     height: auto;
     min-height: 100vh;
     padding-bottom: var(--layout-md);
+
     &__container {
       grid-template-columns: 1fr;
       height: auto;
@@ -943,7 +945,6 @@ html {
       transform: none;
 
       width: calc(100% - (var(--space-md) * 2));
-    
 
       display: flex;
       flex-direction: column;
@@ -958,13 +959,19 @@ html {
         flex-direction: column;
         align-items: center;
         gap: var(--space-xs);
+
+        p {
+          order: 1;
+        }
       }
 
       &-avatars {
+        order: 2; // 🔥 agora fica entre texto e nome
         justify-content: center;
       }
 
       &-author {
+        order: 3; // 🔥 nome fica por último
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -984,6 +991,27 @@ html {
     }
 
   }
+  .solutions {
+    &_scroll {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch; // 🔥 essencial
+      scroll-snap-type: none; // 🔥 remove o travamento
+    }
+
+    &_track {
+      display: flex;
+      gap: var(--space-md);
+      width: max-content;
+
+      padding-left: var(--space-md);
+      padding-right: var(--space-md);
+    }
+
+    &_card {
+      width: 276px;
+      flex-shrink: 0;
+    }
+  }
   .services {
     &_card {
       position: relative;
@@ -999,36 +1027,49 @@ html {
           gap: var(--space-md);
     }
   }
-  .process {
-  &__cards {
+ .process {
+    &__cards {
       flex-direction: column;
     }
 
     .process-card {
       flex: none;
       height: auto;
+      min-height: auto;
+      overflow: visible; // 🔥 evita corte do conteúdo
 
       &__content {
-        margin-top: var(--layout-xs); // 🔥 espaço entre número e título
+        margin-top: var(--layout-xs); // espaço entre número e título
       }
 
       &__description {
-    opacity: 0;
-    max-height: 0;
-    overflow: hidden;
-    transform: translateY(20px);
-    transition: all 0.4s ease;
+        opacity: 0;
+        max-height: 0;
+        overflow: hidden;
+        transform: translateY(20px);
+        transition: all 0.4s ease;
       }
 
       &.active {
         flex: none;
 
-    .process-card__description {
-      opacity: 1;
-      max-height: 200px; // 🔥 ajusta conforme conteúdo
-      transform: translateY(0);
-    }
+        .process-card__description {
+          opacity: 1;
+           max-height: none; // 🔥 remove conflito
+          transform: translateY(0);
+        }
       }
     }
+
+    &_right {
+      height: auto;
+      justify-content: flex-start;
+    }
+  }
+  .work {
+    &__grid {
+      gap: var(--layout-xs);
+    }
+  
   }
 }
