@@ -1,7 +1,7 @@
 /* =========================
    TOKENS
 ========================= */
-@import './scale.css';
+@import './scale';
 @import './colors';
 @import './typography';
 
@@ -892,6 +892,143 @@ html {
     }
     .case__split-bg-right {
       background: #e9e9e9;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+@media (max-width: 48rem) {
+  .hero {
+    position: relative;
+    height: auto;
+    min-height: 100vh;
+    padding-bottom: var(--layout-md);
+    &__container {
+      grid-template-columns: 1fr;
+      height: auto;
+      gap: var(--space-lg);
+      padding: var(--space-md);
+      padding-top: var(--size-80);
+    }
+
+    &__content {
+      max-width: 100%;
+      height: auto;
+      text-align: center;
+      align-items: center;
+    }
+
+    &__media {
+      height: auto;
+      justify-content: center;
+      padding-right: 0;
+
+      img {
+        height: auto;
+        max-height: 70vh;
+        width: auto;
+      }
+    }
+
+    &__testimonials {
+      position: absolute;
+      bottom: 0;
+      left: var(--space-md);
+      transform: none;
+
+      width: calc(100% - (var(--space-md) * 2));
+    
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+
+      gap: var(--space-xs);
+      padding: var(--space-md);
+
+      &-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: var(--space-xs);
+      }
+
+      &-avatars {
+        justify-content: center;
+      }
+
+      &-author {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  }
+  .main {
+    margin-top: calc(-1 * var(--space-2xl));
+    border-top-left-radius: var(--border-radius-3xl);
+    border-top-right-radius: var(--border-radius-3xl);
+    padding: var(--layout-xs) 0 0 0;
+  }
+  .about {
+    &_grid {
+      grid-template-columns: 1fr;
+        gap: var(--space-3xl);
+    }
+
+  }
+  .services {
+    &_card {
+      position: relative;
+      top: auto;
+    }
+
+    &_card:nth-child(n) {
+      top: auto;
+    }
+
+    &_card_content {
+      grid-template-columns: 1fr;
+          gap: var(--space-md);
+    }
+  }
+  .process {
+  &__cards {
+      flex-direction: column;
+    }
+
+    .process-card {
+      flex: none;
+      height: auto;
+
+      &__content {
+        margin-top: var(--layout-xs); // 🔥 espaço entre número e título
+      }
+
+      &__description {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transform: translateY(20px);
+    transition: all 0.4s ease;
+      }
+
+      &.active {
+        flex: none;
+
+    .process-card__description {
+      opacity: 1;
+      max-height: 200px; // 🔥 ajusta conforme conteúdo
+      transform: translateY(0);
+    }
+      }
     }
   }
 }

@@ -115,3 +115,18 @@
 .weight-bold {
   font-weight: var(--font-weight-bold);
 }
+
+@media (max-width: 48rem) {
+  :root {
+    /* headings */
+    --font-size-heading-sm: var(--size-18); /* 18px */
+    --font-size-heading-md: var(--size-20); /* 20px */
+    --font-size-heading-lg: var(--size-24); /* 24px */
+    --font-size-heading-xl: var(--size-32); /* 32px */
+
+    /* display */
+    --font-size-display-sm: var(--size-32); /* 32px */
+    --font-size-display-md: var(--size-40); /* 40px */
+    --font-size-display-lg: var(--size-56); /* 56px */
+  }
+}

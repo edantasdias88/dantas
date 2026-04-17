@@ -16,35 +16,25 @@ const translations = {
       description: 'Minha missão é simplificar o complexo e criar experiências que realmente importam.',
       testimonials: [
         {
-          text: 'O Edilson tem uma visão muito forte de produto e sempre traz soluções bem pensadas.',
-          name: 'João Silva',
+          text: 'Trabalhar com o Edilson é sempre fluido, ele pensa na experiência e na viabilidade técnica ao mesmo tempo, facilitando muito o desenvolvimento.',
+          name: 'Aline Ferreira',
           role: 'Frontend Developer'
         },
         {
-          text: 'Trabalhar com ele elevou muito o nível do nosso design system.',
-          name: 'Maria Souza',
-          role: 'Product Manager'
+          text: 'O Edilson transforma feedbacks dos clientes em melhorias claras e bem priorizadas, sempre com foco em resolver problemas reais do usuário',
+          name: 'Robertson Junio',
+          role: 'Gerente Custumer Success'
         },
         {
-          text: 'Extremamente organizado e focado em escala.',
-          name: 'Carlos Lima',
-          role: 'Tech Lead'
-        },
-        {
-          text: 'Sempre preocupado com a experiência do usuário.',
-          name: 'Ana Costa',
-          role: 'UX Researcher'
-        },
-        {
-          text: 'Entrega consistente e com muita qualidade.',
-          name: 'Bruno Alves',
-          role: 'Product Owner'
+          text: 'Edilson tem uma leitura muito madura de produto e impacto no negócio, propondo soluções que geram valor e sustentam crescimento',
+          name: 'Marcelo Gozzi',
+          role: 'CO-CEO Alugou Quitou'
         }
       ]
     },
     about: {
       title: "Edilson Dantas Dias",
-      description: "Product Designer focado em Design Systems, UX e produtos digitais escaláveis.",
+      description: "Acredito que o design vai muito além da estética, ele é uma ferramenta estratégica capaz de simplificar problemas complexos, acelerar processos e criar experiências que realmente aproximam pessoas e negócios.",
 
       circleText: "Product Design • Design Systems • DesignOps • UX Design • UX Strategy • UI Design",
 
@@ -52,13 +42,14 @@ const translations = {
       approachTitle: "Forma de atuar",
 
       experience: [
-        "Com mais de 12 anos de experiência, ajudo empresas e equipes a criar produtos digitais que realmente fazem a diferença.",
-        "Desenvolvi Design Systems completos e implementei processos de Design Ops que aumentaram a eficiência dos times."
+        "Com mais de 12 anos de experiência ajudando empresas e equipes a criar produtos digitais que realmente fazem a diferença.",
+        "Ao longo da minha carreira, desenvolvi Design Systems completos e implementei processos de Design Ops que aumentaram a eficiência de times."
       ],
 
       approach: [
-        "Atuo de ponta a ponta, da estratégia à execução, garantindo soluções consistentes, funcionais e centradas no usuário.",
-        "Trabalho com equipes multidisciplinares para transformar ideias em produtos escaláveis e de alta qualidade."
+        "Atuo de ponta a ponta no processo de design, desde a definição estratégica até a execução, garantindo soluções consistentes, funcionais e visualmente impactantes.",
+        "Colaborei com equipes multidisciplinares incluindo POs, desenvolvedores, CS e marketing para transformar ideias em produtos escaláveis e de alta qualidade.",
+        "Minha trajetória une visão estratégica, liderança e execução prática. Tenho facilidade em identificar problemas complexos e propor soluções funcionais, sempre com uma abordagem colaborativa, flexível e didática."
       ]
     },
     solutions: {
@@ -136,20 +127,20 @@ const translations = {
       title: "Meu processo de criação, a chave de tudo",
       steps: [
         {
-          title: "Descoberta",
-          description: "Entendo o problema, o contexto e os objetivos do produto."
+          title: "Imersão",
+          description: "Começo com um alinhamento estratégico para entender seu negócio, contexto e objetivos. Nessa etapa, defino o escopo e conduzo pesquisas que fundamentam decisões ao longo de todo o projeto."
         },
         {
-          title: "Estratégia",
-          description: "Defino caminhos e soluções com foco no usuário."
+          title: "Estruturação",
+          description: "Com base nos insights levantados, desenvolvo wireframes (quando necessário) e fluxos de navegação, organizando a informação de forma clara e priorizando usabilidade e eficiência."
         },
         {
-          title: "Execução",
-          description: "Crio interfaces e protótipos funcionais."
+          title: "Design de Interface",
+          description: "Aqui é onde a solução ganha forma. Traduzo estratégia e conceito em uma experiência visual consistente, funcional e intuitiva, sempre alinhada à identidade da sua marca."
         },
         {
-          title: "Evolução",
-          description: "Analiso e evoluo continuamente o produto."
+          title: "Entrega & Handoff",
+          description: "Com tudo validado, entrego os materiais organizados e documentados, prontos para desenvolvimento — garantindo clareza, qualidade e aderência aos prazos."
         }
       ]
     },
@@ -182,35 +173,25 @@ const translations = {
       description: 'My mission is to simplify complexity and create experiences that truly matter.',
       testimonials: [
         {
-          text: 'Edilson has a strong product mindset and always brings thoughtful solutions.',
-          name: 'João Silva',
+          text: 'Working with Edilson is always smooth; he balances user experience and technical feasibility, making development much more efficient.',
+          name: 'Aline Ferreira',
           role: 'Frontend Developer'
         },
         {
-          text: 'Working with him elevated our design system a lot.',
-          name: 'Maria Souza',
-          role: 'Product Manager'
+          text: 'Edilson turns customer feedback into clear, well-prioritized improvements, always focused on solving real user problems.',
+          name: 'Robertson Junio',
+          role: 'Gerente Custumer Success'
         },
         {
-          text: 'Extremely organized and focused on scalability.',
-          name: 'Carlos Lima',
-          role: 'Tech Lead'
-        },
-        {
-          text: 'Always focused on user experience.',
-          name: 'Ana Costa',
-          role: 'UX Researcher'
-        },
-        {
-          text: 'Consistent and high-quality delivery.',
-          name: 'Bruno Alves',
-          role: 'Product Owner'
+          text: 'Edilson has a mature understanding of product and business impact, proposing solutions that drive value and support growth.',
+          name: 'Marcelo Gozzi',
+          role: 'CO-CEO Alugou Quitou'
         }
       ]
     },
     about: {
       title: "Edilson Dantas Dias",
-      description: "Product Designer focused on Design Systems, UX and scalable digital products.",
+      description: "I believe design goes far beyond aesthetics; it is a strategic tool capable of simplifying complex problems, accelerating processes, and creating experiences that truly connect people and businesses.",
 
       circleText: "Product Design • Design Systems • DesignOps • UX Design • UX Strategy • UI Design",
 
@@ -218,13 +199,14 @@ const translations = {
       approachTitle: "Way of working",
 
       experience: [
-        "With over 12 years of experience, I help companies and teams build digital products that truly make a difference.",
-        "I have developed complete Design Systems and implemented Design Ops processes that improved team efficiency."
+        "With over 12 years of experience helping companies and teams build digital products that truly make a difference.",
+        "Throughout my career, I have developed complete Design Systems and implemented Design Ops processes that increased team efficiency."
       ],
 
       approach: [
-        "I work end-to-end, from strategy to execution, ensuring consistent, functional and user-centered solutions.",
-        "I collaborate with multidisciplinary teams to turn ideas into scalable, high-quality products."
+        "I work end-to-end across the design process, from strategic definition to execution, ensuring consistent, functional, and visually impactful solutions.",
+        "I have collaborated with multidisciplinary teams, including POs, developers, CS, and marketing, to turn ideas into scalable, high-quality products.",
+        "My journey combines strategic vision, leadership, and hands-on execution. I’m skilled at identifying complex problems and proposing effective solutions, always with a collaborative, flexible, and clear approach."
       ]
     },
     solutions: {
@@ -302,20 +284,20 @@ const translations = {
       title: "My creation process, the key to everything",
       steps: [
         {
-          title: "Discovery",
-          description: "I understand the problem, context and goals."
+          title: "DisDiscoverycovery",
+          description: "I start with a strategic alignment to understand your business, context, and goals. At this stage, I define the scope and conduct research to support decisions throughout the project."
         },
         {
-          title: "Strategy",
-          description: "I define paths and user-focused solutions."
+          title: "Structuring",
+          description: "Based on the insights gathered, I create wireframes (when needed) and navigation flows, organizing information clearly while prioritizing usability and efficiency."
         },
         {
-          title: "Execution",
-          description: "I create interfaces and prototypes."
+          title: "Interface Design",
+          description: "This is where the solution takes shape. I translate strategy and concepts into a consistent, functional, and intuitive visual experience, always aligned with your brand."
         },
         {
-          title: "Evolution",
-          description: "I analyze and continuously improve."
+          title: "Delivery & Handoff",
+          description: "Once everything is validated, I deliver organized and well-documented assets, ready for development — ensuring clarity, quality, and alignment with deadlines."
         }
       ]
     },
